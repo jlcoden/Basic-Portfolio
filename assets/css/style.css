@@ -1,44 +1,56 @@
 
 /* Logo and branding */
 
+.banner {
+  background-color: white; 
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  border-bottom: solid #cccccc 2.0px; 
+  right: 0;
+  left: 0;
+}
+
 .navigation {
+    width: 960px; 
     background-color: white; 
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     position: relative; 
-    left: 0; 
-    right:0;
-    margin-bottom: 20px; 
-  
+   
+    
 }
 
 .name {
-    padding-top: 25px; 
-    padding-right: 30px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    float: left;
+   
     font-size: 150%;
     text-align: center;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    float: left; 
+    height: 50px; 
     background-color: #4aaaa5;
+    display: flex;
+    align-items: center;
   
   }
   
   /* Container with no padding for navbar */
   .nav-container {
-    margin: 0 auto;
     background-color: white; 
-    
+  
   }
   
   /* Navigation */
   nav {
     float: right;
     margin: 0 0 3em 0;
-    padding: 0;
+
 
   }
 
   .nav-list {
+      padding-top: 10px; 
       color: #777777;
 
   }
@@ -60,25 +72,9 @@
           color:#777777;
           font-size: 1.0em; 
           padding-right: 30px;
+      
+
           } 
-
-          a.navOptions:link:link
-          {
-            text-decoration:none; 
-            color:#777777;
-            font-size: 1.0em;
-            padding-right: 30px;
-          
-          }
-
-          a.navOptions:hover
-          {
-            text-decoration:none; 
-            color:#777777;
-            font-size: 1.0em;
-            padding-right: 30px;
-            
-          }
 
           a.navOptions:visited {
             text-decoration:none; 
@@ -86,53 +82,75 @@
             font-size: 1.0em; 
             padding-right: 30px;
           }
-          
+
+          a.navOptions:hover {
+            color: #4aaaa5;
+          }
+
+
+
           
           a.namelink:link 
           { 
               text-decoration:none; 
               color:white; 
-          
-          }
-          
-          a.namelink:hover 
-          {
-              color: gray; 
           }
 
           a.namelink:visited {
             color: white; 
           }
+
+          a.namelink:hover {
+            color: #777777;
+          }
           
 
 body {
+    width: 960px; 
     margin: 0 auto;
     background-image: url("../images/tiny-squares.png");
-  
+ 
 }
 
 
 .aboutMe {
-    width: 960px;
-    padding-top: 10px; 
-    margin: 0 auto;
-    height: 250px;  
-    border: 2px #dddddd;
-    border-width: medium;
-    border-style: solid; 
-    position: relative; 
+    width: 960px; 
+    margin-top: 30px; 
     background-color: white; 
     text-align: left;
+    padding-bottom: 10px; 
+    border: solid #cccccc .5px; 
 }
 
+.verticalLine{
+  width: 945px; 
+  border-bottom: solid #cccccc 2.0px; 
+  z-index: 5;
+  margin-left: 15px; 
+  
+
+}
+
+.aboutMeTitle {
+  width: 960px;
+  color: #4aaaa5;
+  margin-left: 15px; 
+}
+
+
 p.bio {
+    margin-left: 15px; 
     text-align: left;
     line-height: 1.5;
     color: #777777;
 }
 
-h1{
+    
+ 
+h2{
+    padding-top: 10px;  
     color: #4aaaa5;
+    margin-bottom: 5px; 
 
 }
 
@@ -144,15 +162,106 @@ img {
 }
 
 footer {
-    text-align: center;
     background-color: #666666;
     position: fixed;
+    text-align: center;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    color: #ffffff;
+    font-size: 10px; 
     border-top: solid #4aaaa5 10px;
     }
+
+ .portfolio {
+  width: 960px; 
+  height: 400px; 
+  margin-top: 30px; 
+  text-align: left;
+  padding-bottom: 10px; 
+
+}
+
+h2 {
+  color: #4aaaa5;
+  margin-left: 15px; 
+}
+
+.outer {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white; 
+  margin-bottom: 30px;
+  
+}
+
+.item1 {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  border: 3px solid #aaa;
+  margin: 20px;
+  background-image:url("../images/ipad.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+}
+
+.item2 {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  border: 3px solid #aaa;
+  margin: 20px;
+  background:url("../images/roleplaying.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+ 
+
+}
+
+.item3 {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  border: 3px solid #aaa;
+  margin: 20px;
+  background-image:url('../images/triviagame.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+.item4 {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  background: #eee;
+  border: 3px solid #aaa;
+  margin: 20px;
+  background-image:url('../images/widget.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+.item5 {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  background: #eee;
+  border: 3px solid #aaa;
+  margin: 20px;
+  background-image:url('../images/rps.jpg.jpeg');
+  
+}
 
 
 
