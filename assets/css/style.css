@@ -1,0 +1,158 @@
+
+/* Logo and branding */
+
+.navigation {
+    background-color: white; 
+    padding-bottom: 80px;
+    position: relative; 
+    left: 0; 
+    right:0;
+    margin-bottom: 20px; 
+  
+}
+
+.name {
+    padding-top: 25px; 
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    float: left;
+    font-size: 150%;
+    text-align: center;
+    background-color: #4aaaa5;
+  
+  }
+  
+  /* Container with no padding for navbar */
+  .nav-container {
+    margin: 0 auto;
+    background-color: white; 
+    
+  }
+  
+  /* Navigation */
+  nav {
+    float: right;
+    margin: 0 0 3em 0;
+    padding: 0;
+
+  }
+
+  .nav-list {
+      color: #777777;
+
+  }
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+      li {
+        display:inline;
+          }
+
+          a.navOptions:link 
+          { 
+          text-decoration:none; 
+          color:#777777;
+          font-size: 1.0em; 
+          padding-right: 30px;
+          } 
+
+          a.navOptions:link:link
+          {
+            text-decoration:none; 
+            color:#777777;
+            font-size: 1.0em;
+            padding-right: 30px;
+          
+          }
+
+          a.navOptions:hover
+          {
+            text-decoration:none; 
+            color:#777777;
+            font-size: 1.0em;
+            padding-right: 30px;
+            
+          }
+
+          a.navOptions:visited {
+            text-decoration:none; 
+            color:#777777;
+            font-size: 1.0em; 
+            padding-right: 30px;
+          }
+          
+          
+          a.namelink:link 
+          { 
+              text-decoration:none; 
+              color:white; 
+          
+          }
+          
+          a.namelink:hover 
+          {
+              color: gray; 
+          }
+
+          a.namelink:visited {
+            color: white; 
+          }
+          
+
+body {
+    margin: 0 auto;
+    background-image: url("../images/tiny-squares.png");
+  
+}
+
+
+.aboutMe {
+    width: 960px;
+    padding-top: 10px; 
+    margin: 0 auto;
+    height: 250px;  
+    border: 2px #dddddd;
+    border-width: medium;
+    border-style: solid; 
+    position: relative; 
+    background-color: white; 
+    text-align: left;
+}
+
+p.bio {
+    text-align: left;
+    line-height: 1.5;
+    color: #777777;
+}
+
+h1{
+    color: #4aaaa5;
+
+}
+
+img {
+    padding-top: 15px;
+    padding-left: 15px; 
+    padding-right:15px; 
+    float: left; 
+}
+
+footer {
+    text-align: center;
+    background-color: #666666;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid #4aaaa5 10px;
+    }
+
+
+
