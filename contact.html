@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
 
-    <title></title>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+      <title>Contact Me</title>
+
+    <!--Link to CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   <!--NavigationBar-->
+   </head>
 
-   
-   <div class="navigation">
-        <div class="nav-container">
-          <div class="name">
-            <a class ="namelink" href="#!">Joshua Cosson</a>
-          </div>
-          <nav>
-            <ul class="nav-list">
-              <li>
-                <a class ='navOptions' href="index.html">About</a>
-              </li>
-              <li>
-                 <a class ='navOptions' href="portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a class ='navOptions' href="contact.html">Contact</a>
-                  </li> 
-            </ul>
+  
+    <body>
+      <header>
+<!--Navigation Holder-->
+              <div class="navigation">
+                <!--White banner behind navigation-->
+                  <div class="banner"></div>
+
+                    <!--Div container for Name in corner of navigation bar-->
+                    <div class="name">
+                          <a class ="namelink" href="#!">Joshua Cosson</a>
+                    </div>
+                      <nav>
+                        <!-- navigation drop down Options-->
+                        <ul class="nav-list">
+                              <li>
+                                  <a class ='navOptions' href="index.html">About</a>
+                              </li>
+                              <li>
+                                  <a class ='navOptions' href="portfolio.html">Portfolio</a>
+                              </li>
+                              <li>
+                                  <a class ='navOptions' href="contact.html">Contact</a>
+                   </li> 
+             </ul>
           </nav>
-        </div>
-    </div>
+      </div>
 
-  </head>
+
+
+                  </header>
+
 
               <body>
 
 
-                    <footer>
+                  <div class="container">
+                      <form action="action_page.php">
+                    
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="fullname" placeholder="Your name..">
+
+
+                                            
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+                              
+                    
+                        <input type="submit" value="Submit">
+                    
+                      </form>
+                    </div>
+
+                   
+                      <!--footer for bottom of page-->
+                      <footer>
                             <p class="footer">Copywrite&#169;</p>
-                    </footer>
+                     </footer>
                   
-  </body>
+                </body>
 
 
 </html>
