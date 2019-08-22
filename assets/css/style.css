@@ -1,4 +1,4 @@
-header {
+.header {
   width: 100%;
   height: 60px; 
   background-color: white; 
@@ -7,11 +7,16 @@ header {
   float: left;
   top: 0px;
   left: 0px;
+  z-index: 2;
+  display: block; 
 }
 
-.navigationBanner {
-    width: 100%; 
-    background-color: white;
+.navContainer {
+
+  margin: 0 auto; 
+  width: 960px; 
+  display: block; 
+
 }
 
 .name {
@@ -20,27 +25,20 @@ header {
     float: left; 
     height: 60px; 
     background-color: #4aaaa5;
-    display: flex;
+    display: block;
     align-items: center;
     padding-left: 15px; 
     padding-right: 15px; 
-    margin-left: 160px;
-    
-
   }
 
 
 
   /* Navigation */
-  nav {
-    top: 0px; 
-  }
 
   .nav-list {
       padding-top: 20px; 
-      float: right; 
       color: #777777;
-      margin-right: 130px; 
+      float: right; 
 
   }
 
@@ -78,6 +76,12 @@ header {
 
 
 
+          .namelink{
+            display: block; 
+            font-weight: bold; 
+            margin-block-start: .70em; 
+      
+          }
           
           a.namelink:link 
           { 
@@ -97,18 +101,21 @@ header {
 body {
     width: 960px; 
     margin: auto;
+    padding: 0; 
     background-image: url("../images/tiny-squares.png");
+  
  
 }
 
 
-.aboutMe {
+.content {
     width: 960px; 
     height: 400px; 
-    margin-top: 100px; 
+    margin: auto; 
     background-color: white; 
     text-align: left;
     border: solid #cccccc .5px; 
+    margin-top: 90px; 
 }
 
 .borderLine{
@@ -126,13 +133,6 @@ p {
     line-height: 1.5;
     color: #777777;
 }    
- 
-h2{
-    padding-top: 10px;  
-    color: #4aaaa5;
-    margin-bottom: 5px; 
-
-}
 
 
 img {
@@ -169,90 +169,90 @@ footer {
 h2 {
   color: #4aaaa5;
   margin-left: 15px; 
-  margin-top: 50px; 
+  margin-block-start: 0.70em;
+  margin-block-end: 0.70em;
+
 }
 
-.outerBox {
-  width: 960px;
-  display: flex;
-  flex-wrap: wrap;
+.box{
+  height: 600px; 
+  margin: auto; 
+  width: 960px; 
   margin-top: 100px; 
-  height: 860px; 
+  flex-wrap: wrap; 
+  flex-direction: column; 
   background-color: white; 
-  margin-bottom: 30px;
-  padding-top: 50px; 
-  border: solid #cccccc .5px; 
-  
+  display: flex; 
 }
-
 
 
 .item1 {
-  width: 300px;
-  height: 200px;
-  padding-top: 10px;
-  text-align: center;
-  border: 3px solid #aaa;
-  margin: 20px;
+  width: 200px; 
+  height: 150px; 
+  background-color: white; 
+  border: 1px solid #aaa;
+  margin: 10px; 
   background-image:url("../images/ipad.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  text-align: center;
 
 
 }
 
 .item2 {
-  width: 300px;
-  height: 200px;
-  padding-top: 10px;
-  text-align: center;
-  border: 3px solid #aaa;
-  margin: 20px;
+  width: 200px; 
+  height: 150px; 
+  background-color: white; 
+  border: 1px solid #aaa;
+  margin: 10px; 
   background:url("../images/roleplaying.png");
   background-size: auto;
   background-repeat: no-repeat;
- 
+  text-align: center;
+
 
 }
 
 .item3 {
-  width: 300px;
-  height: 200px;
-  padding-top: 10px;
-  text-align: center;
-  border: 3px solid #aaa;
-  margin: 20px;
+  width: 200px; 
+  height: 150px; 
+  background-color: white; 
+  border: 1px solid #aaa;
+  margin: 10px; 
   background-image:url('../images/triviagame.png');
   background-size: auto;
   background-repeat: no-repeat;
+  text-align: center;
 
 }
 
 .item4 {
-  width: 300px;
-  height: 200px;
-  padding-top: 10px;
-  text-align: center;
-  background: #eee;
-  border: 3px solid #aaa;
-  margin: 20px;
+  width: 200px; 
+  height: 150px; 
+  background-color: white; 
+  border: 1px solid #aaa;
+  margin: 10px; 
   background-image:url('../images/widget.jpg');
   background-size: auto;
   background-repeat: no-repeat;
+  margin-top: 71px; 
+  text-align: center;
 
 }
 
 .item5 {
-  width: 300px;
-  height: 200px;
-  padding-top: 10px;
-  text-align: center;
-  background: #eee;
-  border: 3px solid #aaa;
-  margin: 20px;
+  width: 200px; 
+  height: 150px; 
+  background-color: white; 
+  border: 1px solid #aaa;
+  margin: 10px; 
+  margin-right: 500px; 
   background-image:url('../images/rps.jpg.jpeg');
+  text-align: center;
   
 }
+
 
 
 /* Style box inputs that have type="text" (Email and Name)*/
@@ -286,14 +286,28 @@ input[type=submit]:hover {
 
 .container{
   width: 960px; 
-  margin-top: 100px; 
-  height: 400px; 
+  margin: auto; 
+  height: 460px; 
   background-color: white; 
-  margin-bottom: 30px;
   padding-top: 50px; 
-  padding-right: 20px; 
-  padding-left: 20px; 
   border: solid #cccccc .5px; 
   border-radius: 5px;
-  position: relative; 
+  margin-top: 90px; 
+
+}
+
+.PortfolioTitle{
+  color: #4aaaa5;
+  margin-left: 15px; 
+}
+
+h3{
+  bottom: 10px;
+  background-color: #4aaaa5;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  margin-top: 125px; 
+  color: white; 
+ 
 }
