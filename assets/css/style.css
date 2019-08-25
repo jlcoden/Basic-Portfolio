@@ -1,128 +1,123 @@
+/*style for header */
 header {
   width: 100%;
   height: 60px; 
-  background-color: white; 
+  background-color:  #ffffff;
   border-bottom: solid #cccccc 1px;  
-  float: left;
   top: 0px;
   left: 0px;
-  z-index: 2;
-  display: block; 
   position: fixed; 
   z-index: 5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/*style for nav container*/
 .navContainer {
 
   margin: 0 auto; 
-  width: 960px; 
-  display: block; 
+  width: 960px;
 
 }
 
+/*style for name div in nav container*/
 .name {
-    font-size: 150%;
-    text-align: center;
-    float: left; 
-    height: 60px; 
-    background-color: #4aaaa5;
-    display: block;
-    align-items: center;
-    padding-left: 15px; 
-    padding-right: 15px; 
-    z-index: 1;
+  font-size: 125%;
+  text-align: center;
+  float: left; 
+  height: 60px; 
+  width: 140px; 
+  background-color: #4aaaa5;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  z-index: 1;
+}
+
+/* Style for Nav list in navigation bar*/
+
+.nav-list {
+    padding-top: 20px; 
+    color: #777777;
+    float: right; 
   }
+   
+/*Style for unordered list / in the Nav List */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  /*Style for list items in the Nav List */
+li {
+    display:inline;
+}
 
+/*Style for hyperlinks in the nav items */
+a.navOptions:link 
+{ 
+  text-decoration:none; 
+  color:#777777;
+  font-size: 1.0em; 
+  padding-right: 20px;
+  right: 0px; 
+} 
+  /*Style for when navigation hyperlinks are visited*/
+a.navOptions:visited {
+  text-decoration:none; 
+  color:#777777;
+  font-size: 1.0em; 
+  padding-right: 30px;
+}
+/*Style when hovering over navigation hyperlinks*/
+a.navOptions:hover {
+  color: #4aaaa5;
+}
 
-
-  /* Navigation */
-
-  .nav-list {
-      padding-top: 20px; 
-      color: #777777;
-      float: right; 
-
+/*Style for hyperlink in name div*/
+.namelink{
+  font-weight: bold; 
+  text-align: center; 
+  line-height: 3em;
   }
-
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-      li {
-        display:inline;
-          }
-
-          a.navOptions:link 
-          { 
-          text-decoration:none; 
-          color:#777777;
-          font-size: 1.0em; 
-          padding-right: 30px;
+/*Style for hyperlink in name div*/
+a.namelink:link 
+{ 
+    text-decoration:none; 
+    color: #ffffff;
+}
+  /*Style for hyperlink in name div when visited*/
+a.namelink:visited {
+  color: #ffffff;
+}
+/*Style for hyperlink in name div when hovering*/
+a.namelink:hover {
+  color: #777777;
+}
       
-
-          } 
-
-          a.navOptions:visited {
-            text-decoration:none; 
-            color:#777777;
-            font-size: 1.0em; 
-            padding-right: 30px;
-          }
-
-          a.navOptions:hover {
-            color: #4aaaa5;
-          }
-
-
-
-          .namelink{
-            display: block; 
-            font-weight: bold; 
-            margin-block-start: .70em; 
-      
-          }
-          
-          a.namelink:link 
-          { 
-              text-decoration:none; 
-              color:white; 
-          }
-
-          a.namelink:visited {
-            color: white; 
-          }
-
-          a.namelink:hover {
-            color: #777777;
-          }
-          
-
+/*Style for body*/
 body {
-    width: 960px; 
-    margin: auto;
-    padding: 0; 
-    background-image: url("../images/tiny-squares.png");
-    height: 700px; 
-    background-color: white; 
-    position: relative;
+  width: 960px; 
+  margin: auto;
+  padding: 0; 
+  background-image: url("../images/tiny-squares.png");
+  height: 700px; 
+  background-color:  #ffffff;
+  position: relative;
 
 }
 
-
+/*Style for content div on index.html page for about me section */
 .content {
     width: 960px; 
     height: 400px; 
     margin: auto; 
-    background-color: white; 
+    background-color: #ffffff;
     text-align: left;
     border: solid #cccccc .5px; 
     margin-top: 90px; 
     
 }
 
+/*Style for border line under page title */
 .borderLine{
   width: 930px; 
   border-bottom: solid #cccccc 2.0px; 
@@ -130,16 +125,24 @@ body {
   margin-left: 15px; 
 }
 
+/*Style for border line for container div on contact page */
+.container .borderLine{
+
+  margin-left: 0px; 
+  margin-bottom: 10px; 
+}
 
 
+/*Style for paragraph */
 p {
     margin-left: 15px; 
     text-align: left;
     line-height: 1.5;
     color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }    
 
-
+/*Style for profile image and image link on index page  */
 a img {
     padding-top: 15px;
     padding-left: 15px; 
@@ -148,6 +151,7 @@ a img {
 
 }
 
+/*Style for project photos on portfolio page  */
 .box img {
   position: relative;
   width: 200px; 
@@ -157,6 +161,7 @@ a img {
 
 }
 
+/*Style for footer */
 footer {
     background-color: #666666;
     left: 0;
@@ -168,79 +173,85 @@ footer {
     z-index: 5;
     }
 
+/*Style for paragrpah text in footer */
  p.footer {
-          text-align:center;
-          color: #aaa;
-      
-
-
+ text-align:center;
+ color: #aaa;
+ font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
  }
 
- .portfolio {
-  width: 960px; 
-  text-align: left;
-  padding-bottom: 10px; 
-
-}
-
+ /*style for h2 tags */
 h2 {
   color: #4aaaa5;
   margin-left: 15px; 
   margin-bottom: 20px; 
+  font-family: 'Georgia', Times, Times New Roman, serif;
+
 
 }
 
-article {
-  width: 960px; 
-  position: absolute; 
-  padding: 0;
-  margin: 0;
+/*style for h2 tag in container div */
+.container h2{
+  margin-top: -30px; 
+  padding-top: 0px; 
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/*style for box container on portfolio page */
  .box{
+  margin:0; 
+  padding: 0; 
   width: 960px; 
   height: 700px; 
-  background-color: white; 
+  background-color: #ffffff;
   border: solid #cccccc .5px; 
   border-radius: 5px;
-  margin-top: 100px; 
+  margin-top: 90px; 
  
 }
 
+/*style for item 1 of projects on porfolio page */
 .item1{
+  padding-top: 30px; 
   position:absolute;
   text-align:center;
-  margin-left: 20px;
+  margin-left: 15px; 
 
 }
 
+/*style for item 2 of projects on porfolio page */
 .item2{
+  padding-top: 30px; 
   position:absolute;
   text-align:center;
-  left: 260px; 
+  left: 240px; 
+
 
 }
 
+/*style for item 3 of projects on porfolio page */
 .item3{
   position:absolute;
   text-align:center;
-  margin-left: 20px;
-  margin-top: 190px; 
+  margin-left: 15px; 
+  margin-top: 220px; 
 }
 
+/*style for item 4 of projects on porfolio page */
 .item4{
   position:absolute;
   text-align:center;
-  margin-top: 190px; 
-  left: 260px; 
+  margin-top: 220px; 
+  left: 240px; 
 
 }
 
+/*style for item 5 of projects on porfolio page */
 .item5{
   position:absolute;
   text-align:center;
-  margin-top: 380px; 
-  margin-left: 20px;
+  margin-top: 410px; 
+  margin-left: 15px; 
 }
 
 /* Style box inputs that have type="text" (Email and Name)*/
@@ -250,19 +261,22 @@ input[type=text], select, textarea {
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
-  margin-top: 6px; 
+  margin-top: 10px; 
   margin-bottom: 16px; 
-  resize: vertical 
+  resize: vertical;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* Style the submit button */
+/* Style for the submit button */
 input[type=submit] {
   background-color: #4aaaa5;
-  color: white;
+  color: #ffffff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  
 }
 
 /* When moving the mouse over the submit button, add a darker gray color */
@@ -271,35 +285,42 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form container */
-
 .container{
   width: 960px; 
-  margin: auto; 
-  height: 460px; 
-  background-color: white; 
+  margin: 0;
+  padding: 0; 
+  height: 500px; 
+  background-color:  #ffffff;
   padding-top: 50px; 
   border: solid #cccccc .5px; 
   border-radius: 5px;
   margin-top: 90px; 
+  
 
 }
 
+/* style for title on portfolio page*/
 .PortfolioTitle{
   color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  
 
 }
 
+/*style for h3 tags placed on project items for the protfolio page*/
 h3{
   background-color: #4aaaa5;
   z-index: 2;
   position: absolute;
   top: 78%;
-  left: 0;
-  right: 0;
   font-size: 15px;
   width: 100%;
   height: 26px;
   padding: 0;
   margin: 0;
+  color:  #ffffff;
+  text-align: center; 
+  line-height: 1.5em; 
+  font-family: 'Georgia', Times, Times New Roman, serif;
  
 }
